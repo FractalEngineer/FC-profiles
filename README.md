@@ -1,2 +1,2 @@
 # FC-profiles
-A repo of up to date profiles used in BNF
+An updated repo of profiles used in BNF

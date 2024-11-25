@@ -1,0 +1,228 @@
+meta:
+  version: 514
+  name: F65 Pusher
+  datetime: 1699261264
+motor:
+  digital_idle: 4.5
+  motor_limit: 100
+  dshot_time: 600
+  invert_yaw: 1
+  gyro_orientation: 8
+  torque_boost: 0
+  throttle_boost: 0
+  motor_pins:
+    - 3
+    - 2
+    - 1
+    - 0
+  turtle_throttle_percent: 80
+serial:
+  rx: 0
+  smart_audio: 2
+  hdzero: 0
+filter:
+  gyro:
+    - type: 3
+      cutoff_freq: 100
+    - type: 0
+      cutoff_freq: 90
+  dterm:
+    - type: 1
+      cutoff_freq: 260
+    - type: 0
+      cutoff_freq: 0
+  dterm_dynamic_enable: 1
+  dterm_dynamic_min: 70
+  dterm_dynamic_max: 260
+osd:
+  guac_mode: 0
+  callsign: F65
+  elements:
+    - 1063
+    - 14381
+    - 14340
+    - 14393
+    - 13400
+    - 13353
+    - 1121
+    - 14433
+    - 6177
+    - 13317
+    - 1029
+    - 14341
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  elements_hd:
+    - 79
+    - 17493
+    - 17408
+    - 17505
+    - 17585
+    - 16465
+    - 177
+    - 16561
+    - 8265
+    - 16385
+    - 0
+    - 17409
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+rate:
+  profile: 0
+  rates:
+    - mode: 2
+      rate:
+        - - 20
+          - 20
+          - 20
+        - - 860
+          - 860
+          - 670
+        - - 0.2
+          - 0.2
+          - 0.2
+    - mode: 0
+      rate:
+        - - 860
+          - 860
+          - 500
+        - - 0.8
+          - 0.8
+          - 0.6
+        - - 0.55
+          - 0
+          - 0.55
+  level_max_angle: 65
+  sticks_deadband: 0.01
+  throttle_mid: 0.5
+  throttle_expo: 0
+receiver:
+  protocol: 14
+  aux:
+    - 0
+    - 0
+    - 1
+    - 12
+    - 12
+    - 12
+    - 12
+    - 2
+    - 2
+    - 12
+    - 12
+    - 13
+    - 12
+    - 13
+  lqi_source: 0
+  channel_mapping: 0
+  stick_calibration_limits:
+    - min: -1
+      max: 1
+    - min: -1
+      max: 1
+    - min: -1
+      max: 1
+    - min: 0
+      max: 1
+pid:
+  pid_profile: 0
+  pid_rates:
+    - kp:
+        - 91
+        - 91
+        - 78.5
+      ki:
+        - 77
+        - 77
+        - 77
+      kd:
+        - 54
+        - 54
+        - 6
+    - kp:
+        - 91
+        - 91
+        - 78.5
+      ki:
+        - 70
+        - 70
+        - 70
+      kd:
+        - 54
+        - 54
+        - 6
+  stick_profile: 0
+  stick_rates:
+    - accelerator:
+        - 0
+        - 0
+        - 0
+      transition:
+        - 0
+        - 0
+        - 0
+    - accelerator:
+        - 1.5
+        - 1.5
+        - 1
+      transition:
+        - 0.3
+        - 0.3
+        - 0
+  big_angle:
+    kp: 5
+    kd: 0
+  small_angle:
+    kp: 10
+    kd: 3
+  throttle_dterm_attenuation:
+    tda_active: 1
+    tda_breakpoint: 0.35
+    tda_percent: 0.7
+voltage:
+  lipo_cell_count: 1
+  pid_voltage_compensation: 1
+  vbattlow: 3.3
+  actual_battery_voltage: 4.2
+  reported_telemetry_voltage: 4.2
+  vbat_scale: 110
+  ibat_scale: 1175
+blackbox:
+  field_flags: 16383
+  sample_rate_hz: 1000
