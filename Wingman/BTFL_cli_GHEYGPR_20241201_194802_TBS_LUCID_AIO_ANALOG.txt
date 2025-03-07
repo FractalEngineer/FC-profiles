@@ -159,7 +159,6 @@ set vtx_power = 4
 set vtx_freq = 5658
 set vcd_video_system = NTSC
 set pinio_box = 40,41,42,43
-set serialmsp_halfduplex = ON
 set craft_name = GHEYGPR
 
 profile 0
