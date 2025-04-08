@@ -1,11 +1,12 @@
 meta:
-  version: 514
-  name: F75_HDZ-AIO5_QS_0.10.5
-  datetime: 1730395495
+  version: 517
+  name: F75_HDZ-AIO5_QS_0.11
+  datetime: 1743942581
 motor:
   digital_idle: 4.5
   motor_limit: 100
   dshot_time: 600
+  dshot_telemetry: false
   invert_yaw: 1
   gyro_orientation: 6
   torque_boost: 0
@@ -34,75 +35,78 @@ filter:
   dterm_dynamic_enable: 1
   dterm_dynamic_min: 70
   dterm_dynamic_max: 260
+  gyro_dynamic_notch_enable: 1
 osd:
   guac_mode: 0
-  callsign: F75 
-  elements:
-    - 1059
-    - 14381
-    - 14340
-    - 14393
-    - 14433
-    - 13353
-    - 1121
-    - 13409
-    - 6161
-    - 13317
-    - 1029
-    - 14341
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-  elements_hd:
-    - 79
-    - 17493
-    - 17408
-    - 17505
-    - 17585
-    - 16465
-    - 177
-    - 16561
-    - 8249
-    - 16385
-    - 1
-    - 17409
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
-    - 0
+  profiles:
+    - callsign: F75
+      elements:
+        - 65699
+        - 17913645
+        - 17827588
+        - 17925945
+        - 18007905
+        - 16860841
+        - 180449
+        - 16959201
+        - 8446737
+        - 16778885
+        - 133
+        - 17827589
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - callsign: F75
+      elements:
+        - 77987
+        - 17913645
+        - 17827588
+        - 17925945
+        - 18007905
+        - 16860841
+        - 180449
+        - 16959201
+        - 8446737
+        - 16778885
+        - 133
+        - 17827589
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
 rate:
   profile: 0
   rates:
@@ -149,6 +153,7 @@ receiver:
     - 13
     - 12
     - 13
+    - 12
   lqi_source: 0
   channel_mapping: 0
   stick_calibration_limits:
@@ -218,11 +223,13 @@ pid:
 voltage:
   lipo_cell_count: 0
   pid_voltage_compensation: 1
-  vbattlow: 3.6
+  vbattlow: 3.3
   actual_battery_voltage: 4.2
   reported_telemetry_voltage: 4.2
+  use_filtered_voltage_for_warnings: 0
   vbat_scale: 110
   ibat_scale: 0
 blackbox:
   field_flags: 16383
+  debug_flags: 0
   sample_rate_hz: 1000
