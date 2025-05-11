@@ -1,34 +1,33 @@
 meta:
-  version: 517
-  name: F75_HDZ-AIO5_QS_0.11
-  datetime: 1743942581
+  version: 515
+  name: F75_Lucid_AIO
+  datetime: 1744568986
 motor:
   digital_idle: 4.5
   motor_limit: 100
   dshot_time: 600
-  dshot_telemetry: false
   invert_yaw: 1
-  gyro_orientation: 6
+  gyro_orientation: 34
   torque_boost: 0
   throttle_boost: 0
   motor_pins:
-    - 1
-    - 0
-    - 3
     - 2
-  turtle_throttle_percent: 80
+    - 3
+    - 0
+    - 1
+  turtle_throttle_percent: 100
 serial:
-  rx: 0
-  smart_audio: 0
-  hdzero: 1
+  rx: 5
+  smart_audio: 2
+  hdzero: 0
 filter:
   gyro:
-    - type: 3
+    - type: 2
       cutoff_freq: 100
     - type: 0
       cutoff_freq: 0
   dterm:
-    - type: 1
+    - type: 0
       cutoff_freq: 260
     - type: 0
       cutoff_freq: 150
@@ -38,75 +37,73 @@ filter:
   gyro_dynamic_notch_enable: 1
 osd:
   guac_mode: 0
-  profiles:
-    - callsign: F75
-      elements:
-        - 65699
-        - 17913645
-        - 17827588
-        - 17925945
-        - 18007905
-        - 16860841
-        - 180449
-        - 16959201
-        - 8446737
-        - 16778885
-        - 133
-        - 17827589
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-    - callsign: F75
-      elements:
-        - 77987
-        - 17913645
-        - 17827588
-        - 17925945
-        - 18007905
-        - 16860841
-        - 180449
-        - 16959201
-        - 8446737
-        - 16778885
-        - 133
-        - 17827589
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
+  callsign: F75 LUCID AIO P2
+  elements:
+    - 1055
+    - 14381
+    - 14340
+    - 14393
+    - 14433
+    - 13353
+    - 1121
+    - 13409
+    - 9233
+    - 13317
+    - 1029
+    - 14341
+    - 6200
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  elements_hd:
+    - 79
+    - 17493
+    - 17408
+    - 17505
+    - 17585
+    - 16465
+    - 177
+    - 16561
+    - 8249
+    - 16385
+    - 0
+    - 17409
+    - 8252
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
 rate:
   profile: 0
   rates:
@@ -137,7 +134,7 @@ rate:
   throttle_mid: 0.5
   throttle_expo: 0
 receiver:
-  protocol: 14
+  protocol: 1
   aux:
     - 0
     - 0
@@ -153,7 +150,6 @@ receiver:
     - 13
     - 12
     - 13
-    - 12
   lqi_source: 0
   channel_mapping: 0
   stick_calibration_limits:
@@ -166,19 +162,19 @@ receiver:
     - min: 0
       max: 1
 pid:
-  pid_profile: 0
+  pid_profile: 1
   pid_rates:
     - kp:
-        - 81
-        - 81
+        - 95
+        - 95
         - 78
       ki:
         - 77
         - 77
         - 77
       kd:
-        - 44
-        - 44
+        - 54
+        - 54
         - 6
     - kp:
         - 54
@@ -219,17 +215,16 @@ pid:
   throttle_dterm_attenuation:
     tda_active: 1
     tda_breakpoint: 0.35
-    tda_percent: 0.7
+    tda_percent: 0.8
 voltage:
   lipo_cell_count: 0
   pid_voltage_compensation: 1
-  vbattlow: 3.3
+  vbattlow: 3.6
   actual_battery_voltage: 4.2
   reported_telemetry_voltage: 4.2
   use_filtered_voltage_for_warnings: 0
-  vbat_scale: 110
-  ibat_scale: 0
+  vbat_scale: 31
+  ibat_scale: 470
 blackbox:
   field_flags: 16383
-  debug_flags: 0
   sample_rate_hz: 1000
