@@ -1,0 +1,147 @@
+r 'help'
+
+# diff all
+
+# version
+# BetaFlight/IRCSYNERGYF3 3.0.1 Oct 25 2016 / 09:42:40 (48b7b4f)
+
+# reset configuration to default settings
+defaults
+
+# name
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature -VBAT
+feature -RX_PARALLEL_PWM
+feature RX_SERIAL
+feature MOTOR_STOP
+feature GPS
+
+# map
+map TAER1234
+
+# serial
+serial 1 2 115200 38400 0 115200
+serial 2 64 115200 57600 0 115200
+
+# aux
+aux 0 27 0 1925 2075
+
+# adjrange
+
+# rxrange
+rxrange 0 998 2011
+rxrange 1 987 1998
+rxrange 2 987 2011
+rxrange 3 996 1996
+
+# rxfail
+
+# master
+set min_throttle = 1100
+set max_throttle = 1900
+set min_command = 1015
+set small_angle = 180
+set serialrx_provider = SBUS
+set vbat_max_cell_voltage = 40
+set vbat_min_cell_voltage = 30
+set vbat_warning_cell_voltage = 30
+set failsafe_off_delay = 0
+set failsafe_throttle = 1100
+
+# profile
+profile 0
+
+set gps_pos_p = 0
+set gps_posr_p = 0
+set gps_posr_i = 0
+set gps_posr_d = 0
+set gps_nav_p = 0
+set gps_nav_i = 0
+set gps_nav_d = 0
+set p_pitch = 48
+set i_pitch = 60
+set d_pitch = 20
+set p_roll = 32
+set i_roll = 50
+set d_roll = 15
+set d_yaw = 15
+set p_level = 46
+set d_level = 75
+set p_vel = 120
+set i_vel = 45
+set d_vel = 1
+rateprofile 0
+
+# rateprofile
+rateprofile 0
+
+set thr_mid = 0
+set yaw_srate = 65
+set tpa_rate = 0
+
+# rateprofile
+rateprofile 1
+
+
+# rateprofile
+rateprofile 2
+
+
+# restore original rateprofile selection
+rateprofile 0
+
+# profile
+profile 1
+
+rateprofile 0
+
+# rateprofile
+rateprofile 0
+
+
+# rateprofile
+rateprofile 1
+
+
+# rateprofile
+rateprofile 2
+
+
+# restore original rateprofile selection
+rateprofile 0
+
+# profile
+profile 2
+
+rateprofile 0
+
+# rateprofile
+rateprofile 0
+
+
+# rateprofile
+rateprofile 1
+
+
+# rateprofile
+rateprofile 2
+
+
+# restore original rateprofile selection
+rateprofile 0
+
+# restore original profile selection
+profile 0
+
+# save configuration
+save
+
+# 

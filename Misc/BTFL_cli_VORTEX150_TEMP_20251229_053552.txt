@@ -1,0 +1,24 @@
+$M<$M<$M<         diff all
+# Betaflight / IRCSYNERGYF3 (ISF3) 3.2.2 Nov 14 2017 / 13:57:33 (7df1fdf) MSP API: 1.36
+defaults nosave
+
+feature -RX_PARALLEL_PWM
+feature RX_PPM
+map AERT1234
+set serialrx_provider = SBUS
+profile 0
+
+profile 1
+
+profile 2
+
+profile 0
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 0
+save
+# 

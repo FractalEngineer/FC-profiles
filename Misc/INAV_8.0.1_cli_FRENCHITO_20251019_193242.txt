@@ -1,0 +1,330 @@
+
+
+# diff all 
+
+# version
+# INAV/TBS_LUCID_H7_WING_MINI 8.0.1 Jun 13 2025 / 10:41:29 (9fbf01d6) 
+# GCC-13.2.1 20231009
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults noreboot
+
+# resources
+
+# Timer overrides
+timer_output_mode 3 MOTORS
+
+# Outputs [servo]
+servo 1 1000 2000 1476 100
+servo 2 1000 2000 1381 100
+
+# safehome
+
+# Fixed Wing Approach
+
+# geozone
+
+# geozone vertices
+
+# features
+feature GPS
+feature PWM_OUTPUT_ENABLE
+
+# beeper
+
+# blackbox
+blackbox -NAV_ACC
+blackbox NAV_POS
+blackbox NAV_PID
+blackbox MAG
+blackbox ACC
+blackbox ATTI
+blackbox RC_DATA
+blackbox RC_COMMAND
+blackbox MOTORS
+blackbox -GYRO_RAW
+blackbox -PEAKS_R
+blackbox -PEAKS_P
+blackbox -PEAKS_Y
+blackbox SERVOS
+
+# Receiver: Channel map
+
+# Ports
+serial 2 33554432 115200 115200 0 115200
+serial 3 64 115200 115200 0 115200
+serial 5 2 115200 115200 0 115200
+
+# Modes [aux]
+aux 0 0 0 1700 2100
+aux 1 1 1 1700 2100
+aux 2 12 1 900 1300
+aux 3 10 3 1700 2100
+aux 4 37 2 1700 2100
+aux 5 13 4 1700 2100
+aux 6 47 2 1300 2100
+
+# Adjustments [adjrange]
+
+# Receiver rxrange
+
+# temp_sensor
+
+# Mission Control Waypoints [wp]
+#wp 0 invalid
+
+# OSD [osd_layout]
+osd_layout 0 0 18 3 H
+osd_layout 0 1 0 11 H
+osd_layout 0 7 29 19 V
+osd_layout 0 8 22 0 V
+osd_layout 0 9 14 17 H
+osd_layout 0 10 0 1 H
+osd_layout 0 11 0 18 V
+osd_layout 0 12 8 19 V
+osd_layout 0 13 1 9 V
+osd_layout 0 14 47 2 V
+osd_layout 0 15 46 8 V
+osd_layout 0 22 26 2 V
+osd_layout 0 23 47 1 V
+osd_layout 0 25 28 4 H
+osd_layout 0 26 47 9 V
+osd_layout 0 28 47 17 V
+osd_layout 0 30 14 17 V
+osd_layout 0 31 10 3 H
+osd_layout 0 32 0 19 V
+osd_layout 0 33 1 10 V
+osd_layout 0 34 22 1 V
+osd_layout 0 35 16 19 V
+osd_layout 0 40 47 0 V
+osd_layout 0 85 1 8 V
+osd_layout 0 87 47 16 V
+osd_layout 0 96 46 7 H
+osd_layout 0 100 0 17 V
+osd_layout 0 107 1 2 V
+osd_layout 0 108 13 1 H
+osd_layout 0 109 0 3 H
+osd_layout 0 110 0 2 V
+osd_layout 0 111 0 1 V
+osd_layout 0 112 0 3 H
+osd_layout 0 124 23 19 V
+osd_layout 0 125 47 2 H
+osd_layout 0 138 47 10 V
+osd_layout 0 142 45 0 H
+osd_layout 0 144 23 16 V
+osd_layout 0 145 14 3 H
+osd_layout 0 159 0 3 H
+
+# Programming: logic
+
+# Programming: global variables
+
+# Programming: PID controllers
+
+# OSD: custom elements
+
+# master
+set gyro_anti_aliasing_lpf_hz = 0
+set gyro_main_lpf_hz = 125
+set dynamic_gyro_notch_q = 250
+set dynamic_gyro_notch_min_hz = 30
+set setpoint_kalman_enabled = OFF
+set gyro_zero_x = 26
+set gyro_zero_y = 4
+set gyro_zero_z = -1
+set ins_gravity_cmss =  982.944
+set gyro_adaptive_filter_min_hz = 20
+set acc_hardware = ICM42605
+set acczero_x = 9
+set acczero_y = -47
+set acczero_z = 10
+set accgain_x = 4103
+set accgain_y = 4230
+set accgain_z = 4108
+set align_mag = CW180
+set mag_hardware = NONE
+set baro_hardware = DPS310
+set pitot_hardware = VIRTUAL
+set blackbox_rate_denom = 2
+set motor_pwm_protocol = DSHOT300
+set failsafe_procedure = RTH
+set align_board_pitch = 30
+set vbat_scale = 2093
+set current_meter_scale = 200
+set servo_pwm_rate = 330
+set small_angle = 180
+set applied_defaults = 4
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+set gps_ublox_use_beidou = ON
+set gps_ublox_use_glonass = ON
+set airmode_type = STICK_CENTER_ONCE
+set nav_wp_radius = 1000
+set nav_wp_max_safe_distance = 500
+set nav_fw_soaring_motor_stop = ON
+set nav_rth_allow_landing = FS_ONLY
+set nav_rth_altitude = 12000
+set nav_rth_home_altitude = 6500
+set nav_fw_bank_angle = 55
+set nav_fw_auto_climb_rate = 1000
+set nav_fw_manual_climb_rate = 500
+set nav_fw_climb_angle = 60
+set nav_fw_dive_angle = 23
+set nav_fw_loiter_radius = 15000
+set nav_fw_control_smoothness = 2
+set nav_fw_launch_max_angle = 180
+set nav_fw_launch_motor_delay = 0
+set nav_fw_launch_spinup_time = 250
+set nav_fw_launch_max_altitude = 15000
+set nav_fw_launch_climb_angle = 45
+set osd_video_system = DJI_NATIVE
+set osd_alt_alarm = 60
+set osd_dist_alarm = 10000
+set osd_left_sidebar_scroll = SPEED
+set osd_right_sidebar_scroll = ALTITUDE
+set osd_sidebar_scroll_arrows = ON
+set name = FRENCHITO
+set tz_offset = 480
+
+# control_profile
+control_profile 1
+
+set fw_p_pitch = 15
+set fw_i_pitch = 5
+set fw_d_pitch = 5
+set fw_ff_pitch = 70
+set fw_p_roll = 15
+set fw_i_roll = 3
+set fw_d_roll = 7
+set fw_p_yaw = 20
+set fw_i_yaw = 0
+set fw_ff_yaw = 100
+set max_angle_inclination_rll = 600
+set max_angle_inclination_pit = 600
+set dterm_lpf_hz = 100
+set fw_turn_assist_pitch_gain =  0.300
+set nav_fw_pos_z_p = 22
+set nav_fw_pos_z_i = 6
+set nav_fw_pos_z_d = 2
+set nav_fw_pos_z_ff = 25
+set nav_fw_alt_control_response = 47
+set nav_fw_pos_xy_p = 70
+set d_boost_min =  1.000
+set d_boost_max =  1.000
+set rc_expo = 30
+set rc_yaw_expo = 30
+set roll_rate = 18
+set pitch_rate = 12
+set yaw_rate = 4
+set manual_rc_expo = 60
+
+# control_profile
+control_profile 2
+
+set fw_p_pitch = 15
+set fw_i_pitch = 5
+set fw_d_pitch = 5
+set fw_ff_pitch = 70
+set fw_p_roll = 15
+set fw_i_roll = 3
+set fw_d_roll = 7
+set fw_p_yaw = 20
+set fw_i_yaw = 0
+set fw_ff_yaw = 100
+set max_angle_inclination_rll = 550
+set dterm_lpf_hz = 10
+set fw_turn_assist_pitch_gain =  0.300
+set nav_fw_pos_z_p = 35
+set nav_fw_pos_xy_p = 70
+set d_boost_min =  1.000
+set d_boost_max =  1.000
+set rc_expo = 30
+set rc_yaw_expo = 30
+set roll_rate = 18
+set pitch_rate = 9
+set yaw_rate = 3
+
+# control_profile
+control_profile 3
+
+set fw_p_pitch = 15
+set fw_i_pitch = 5
+set fw_d_pitch = 5
+set fw_ff_pitch = 70
+set fw_p_roll = 15
+set fw_i_roll = 3
+set fw_d_roll = 7
+set fw_p_yaw = 20
+set fw_i_yaw = 0
+set fw_ff_yaw = 100
+set max_angle_inclination_rll = 550
+set dterm_lpf_hz = 10
+set fw_turn_assist_pitch_gain =  0.300
+set nav_fw_pos_z_p = 35
+set nav_fw_pos_xy_p = 70
+set d_boost_min =  1.000
+set d_boost_max =  1.000
+set rc_expo = 30
+set rc_yaw_expo = 30
+set roll_rate = 18
+set pitch_rate = 9
+set yaw_rate = 3
+
+# mixer_profile
+mixer_profile 1
+
+set platform_type = AIRPLANE
+set model_preview_type = 8
+
+# Mixer: motor mixer
+
+mmix reset
+
+mmix 0  1.000  0.000  0.000  0.000
+
+# Mixer: servo mixer
+smix reset
+
+smix 0 1 0 -80 0 -1
+smix 1 1 1 -60 0 -1
+smix 2 2 0 -80 0 -1
+smix 3 2 1 60 0 -1
+
+# mixer_profile
+mixer_profile 2
+
+
+# Mixer: motor mixer
+
+# Mixer: servo mixer
+
+# battery_profile
+battery_profile 1
+
+set throttle_idle =  5.000
+set nav_fw_min_thr = 1100
+set nav_fw_launch_thr = 2000
+set nav_fw_launch_idle_thr = 1100
+
+# battery_profile
+battery_profile 2
+
+set throttle_idle =  5.000
+
+# battery_profile
+battery_profile 3
+
+set throttle_idle =  5.000
+
+# restore original profile selection
+control_profile 1
+mixer_profile 1
+battery_profile 1
+
+# save configuration
+save
+
+# 
