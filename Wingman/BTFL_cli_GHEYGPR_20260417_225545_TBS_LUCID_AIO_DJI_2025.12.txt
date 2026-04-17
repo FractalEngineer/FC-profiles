@@ -1,4 +1,4 @@
-Entering CLI Mode, type 'exit' to reboot, or 'help'
+# 
 
 # diff all
 
@@ -50,6 +50,8 @@ set dyn_notch_q = 500
 set gyro_lpf1_dyn_min_hz = 225
 set gyro_lpf1_dyn_max_hz = 450
 set acc_calibration = -24,5,14,1
+set rc_smoothing_setpoint_cutoff = 12
+set rc_smoothing_throttle_cutoff = 20
 set blackbox_sample_rate = 1/2
 set blackbox_disable_alt = ON
 set blackbox_disable_rssi = ON
@@ -67,6 +69,7 @@ set pid_process_denom = 2
 set simplified_gyro_filter_multiplier = 90
 set osd_warn_bitmask = 286719
 set osd_rssi_alarm = 30
+set osd_rssi_dbm_alarm = -105
 set osd_cap_alarm = 2500
 set osd_alt_alarm = 60
 set osd_vbat_pos = 234
@@ -105,7 +108,7 @@ set osd_pid_yaw_pos = 97
 set osd_debug_pos = 234
 set osd_power_pos = 234
 set osd_pidrate_profile_pos = 234
-set osd_warnings_pos = 6549
+set osd_warnings_pos = 6709
 set osd_avg_cell_voltage_pos = 6752
 set osd_pit_ang_pos = 234
 set osd_rol_ang_pos = 234
@@ -162,7 +165,9 @@ set i_yaw = 135
 set f_yaw = 156
 set d_max_roll = 80
 set d_max_pitch = 93
-set feedforward_boost = 20
+set feedforward_averaging = OFF
+set feedforward_jitter_factor = 15
+set feedforward_boost = 5
 set simplified_master_multiplier = 130
 set simplified_d_gain = 150
 set simplified_pi_gain = 130
