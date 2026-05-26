@@ -1,0 +1,200 @@
+# 
+
+# diff all
+
+# version
+# Betaflight / AT32F435G (A435G) 2025.12.2 May  2 2026 / 20:08:27 (norevision) MSP API: 1.47
+# config rev: 17b73b3
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name FRACSP8AIO
+manufacturer_id FRAC
+mcu_id 10ec71650d9800000db01704
+signature 
+
+# name: WINGMAN SP8
+
+# feature
+feature GPS
+feature TELEMETRY
+feature OSD
+
+# serial
+serial UART1 0 115200 57600 0 115200
+serial UART3 64 115200 57600 0 115200
+serial UART4 2 115200 57600 0 115200
+serial UART5 131073 115200 57600 0 115200
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1700 2100 0 0
+aux 2 46 3 1700 2100 0 0
+aux 3 40 2 900 1700 0 0
+
+# master
+set acc_calibration = 46,-45,37,1
+set fpv_mix_degrees = 30
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set motor_output_reordering = 3,2,1,0,4,5,6,7
+set failsafe_delay = 10
+set failsafe_procedure = GPS-RESCUE
+set align_board_pitch = 180
+set vbat_max_cell_voltage = 420
+set vbat_min_cell_voltage = 250
+set vbat_warning_cell_voltage = 280
+set ibata_scale = 1300
+set yaw_motors_reversed = ON
+set small_angle = 180
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+set gps_rescue_min_sats = 6
+set pid_process_denom = 2
+set report_cell_voltage = ON
+set osd_warn_bitmask = 286719
+set osd_rssi_alarm = 30
+set osd_cap_alarm = 2500
+set osd_alt_alarm = 60
+set osd_vbat_pos = 234
+set osd_rssi_pos = 65
+set osd_link_quality_pos = 6210
+set osd_link_tx_power_pos = 98
+set osd_rssi_dbm_pos = 65
+set osd_tim_1_pos = 385
+set osd_tim_2_pos = 7718
+set osd_remaining_time_estimate_pos = 360
+set osd_flymode_pos = 6714
+set osd_anti_gravity_pos = 234
+set osd_g_force_pos = 410
+set osd_throttle_pos = 6466
+set osd_vtx_channel_pos = 2082
+set osd_crosshairs_pos = 205
+set osd_ah_sbar_pos = 206
+set osd_ah_pos = 78
+set osd_current_pos = 6689
+set osd_mah_drawn_pos = 6697
+set osd_motor_diag_pos = 204
+set osd_craft_name_pos = 6164
+set osd_gps_speed_pos = 6433
+set osd_gps_lon_pos = 234
+set osd_gps_lat_pos = 234
+set osd_gps_sats_pos = 3083
+set osd_home_dir_pos = 6233
+set osd_home_dist_pos = 7243
+set osd_flight_dist_pos = 7211
+set osd_compass_bar_pos = 6197
+set osd_altitude_pos = 23850
+set osd_pid_roll_pos = 33
+set osd_pid_pitch_pos = 65
+set osd_pid_yaw_pos = 97
+set osd_debug_pos = 234
+set osd_power_pos = 234
+set osd_pidrate_profile_pos = 234
+set osd_warnings_pos = 6611
+set osd_avg_cell_voltage_pos = 6658
+set osd_pit_ang_pos = 234
+set osd_rol_ang_pos = 234
+set osd_battery_usage_pos = 234
+set osd_disarmed_pos = 234
+set osd_nheading_pos = 1056
+set osd_up_down_reference_pos = 205
+set osd_nvario_pos = 3402
+set osd_esc_tmp_pos = 234
+set osd_esc_rpm_pos = 234
+set osd_esc_rpm_freq_pos = 234
+set osd_rtc_date_time_pos = 234
+set osd_adjustment_range_pos = 234
+set osd_flip_arrow_pos = 401
+set osd_core_temp_pos = 2623
+set osd_log_status_pos = 410
+set osd_stick_overlay_left_pos = 234
+set osd_stick_overlay_right_pos = 234
+set osd_rate_profile_name_pos = 234
+set osd_pid_profile_name_pos = 234
+set osd_profile_name_pos = 234
+set osd_rcchannels_pos = 234
+set osd_camera_frame_pos = 35
+set osd_efficiency_pos = 2607
+set osd_total_flights_pos = 234
+set osd_sys_bitrate_pos = 350
+set osd_sys_distance_pos = 338
+set osd_sys_vtx_temp_pos = 284
+set osd_stat_bitmask = 4591357
+set osd_menu_background = GRAY
+set displayport_msp_fonts = 0,0,0,0
+set pinio_box = 40,41,42,43
+set craft_name = WINGMAN SP8
+
+profile 0
+
+# profile 0
+set profile_name = 2025.12
+set dterm_lpf1_dyn_min_hz = 67
+set dterm_lpf1_dyn_max_hz = 135
+set dterm_lpf1_static_hz = 67
+set dterm_lpf2_static_hz = 135
+set vbat_sag_compensation = 100
+set p_pitch = 75
+set i_pitch = 134
+set d_pitch = 66
+set f_pitch = 154
+set p_roll = 76
+set i_roll = 135
+set d_roll = 58
+set f_roll = 156
+set p_yaw = 76
+set i_yaw = 135
+set f_yaw = 156
+set d_max_roll = 80
+set d_max_pitch = 93
+set feedforward_averaging = OFF
+set feedforward_jitter_factor = 15
+set feedforward_boost = 5
+set simplified_master_multiplier = 130
+set simplified_d_gain = 150
+set simplified_pi_gain = 130
+set simplified_d_max_gain = 115
+set simplified_pitch_pi_gain = 95
+set simplified_dterm_filter_multiplier = 90
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set rateprofile_name = Hanfer
+set roll_rc_rate = 12
+set pitch_rc_rate = 12
+set yaw_rc_rate = 20
+set roll_expo = 45
+set pitch_expo = 45
+set yaw_expo = 45
+set roll_srate = 75
+set pitch_srate = 75
+set yaw_srate = 53
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
